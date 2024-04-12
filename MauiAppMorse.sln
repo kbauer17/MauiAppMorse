@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppMorse", "MauiAppMorse\MauiAppMorse.csproj", "{0A605CC6-B950-46E9-822F-31E668E4E8DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A605CC6-B950-46E9-822F-31E668E4E8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A605CC6-B950-46E9-822F-31E668E4E8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A605CC6-B950-46E9-822F-31E668E4E8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A605CC6-B950-46E9-822F-31E668E4E8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

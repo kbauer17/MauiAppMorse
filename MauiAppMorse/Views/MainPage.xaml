@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="MauiAppMorse.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:MauiAppMorse"
+    Title="MauiAppMorse"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="*,40">
+                <StackLayout
+                    Padding="30"
+                    Spacing="25">
+
+                    <Label
+                        FontSize="32"
+                        HorizontalOptions="Center"
+                        SemanticProperties.HeadingLevel="Level1"
+                        Style="{StaticResource MauiLabel}"
+                        Text="Morse Code" />
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="dash" Clicked="Dash_Clicked"></Button>
+                        <Button Text="dot" Clicked="Dot_Clicked"></Button>
+                        <Button
+                            Clicked="Space_Clicked"
+                            Text="space" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label
+                            x:Name="DotsAndDashes"
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            HorizontalOptions="Center"
+                            Style="{StaticResource MauiLabel}"
+                            Text="" />
+                        
+                        <Label
+                            x:Name="Letters"
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            HorizontalOptions="Center"
+                            Style="{StaticResource MauiLabel}"
+                            Text="" />
+                    </StackLayout>
+                    
+
+                    
+
+                </StackLayout>
+                <Grid
+                    Grid.Row="1"
+                    BackgroundColor="{AppThemeBinding Dark={StaticResource BackgroundDark},
+                                                      Light={StaticResource Primary}}">
+
+                    <Label
+                        x:Name="VersionLabel"
+                        HorizontalOptions="Center"
+                        TextColor="{StaticResource White}"
+                        VerticalOptions="Center" />
+
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
